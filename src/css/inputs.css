@@ -1,0 +1,119 @@
+input {
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border-radius: 3px;
+  width: 250px;
+  outline: none;
+  padding: 12px;
+}
+
+input.search {
+  width: 400px;
+}
+
+.input-group {
+  position: relative;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  cursor: text;
+}
+
+.input-group .placeholder {
+  position: absolute;
+  left: 12px;
+  top: calc(50% + 10px);
+  transform: translateY(-50%);
+  color: var(--text-500);
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+.placeholder {
+  font-weight: 500;
+}
+
+.input-group input:focus + .placeholder,
+.input-group input:valid + .placeholder {
+  top: -10px;
+  font-size: 16px;
+  color: var(--text-300);
+  font-weight: 700;
+}
+
+.input-group input {
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: linear-gradient(90deg, var(--accent-500), var(--accent-200)) left
+      bottom/0 2px no-repeat,
+    linear-gradient(90deg, #ccc, #ccc) left bottom/100% 2px no-repeat,
+    linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% 2px no-repeat;
+  background-size: 0 2px, 100% 2px, 100% 100%;
+  transition: background-size 0.3s ease, background 0.3s ease;
+}
+.input-group input:valid,
+.input-group input:focus {
+  background-size: 100% 2px, 100% 2px, 100% 100%;
+}
+
+.file-group {
+  border: 3px dashed var(--accent-500);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  height: 300px;
+  width: 600px;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-600);
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    color: var(--text-600);
+
+    font-size: 2.2rem;
+  }
+
+  label {
+    cursor: pointer;
+  }
+  input {
+    display: none;
+  }
+}
+
+.search-select {
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 150px;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+  background-color: var(--accent-500);
+  color: var(--text-500);
+  background: linear-gradient(90deg, var(--accent-500), var(--accent-200)) left
+      bottom/0 2px no-repeat,
+    linear-gradient(90deg, #ccc, #ccc) left bottom/100% 2px no-repeat,
+    linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% 2px no-repeat;
+  background-size: 0 2px, 100% 2px, 100% 100%;
+  transition: background-size 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.search-select:focus {
+  background-size: 100% 2px, 100% 2px, 100% 100%;
+  color: var(--text-300);
+}
+
+.search-select option {
+  color: black;
+}

@@ -1,0 +1,50 @@
+.primary-btn {
+  background-color: var(--primary-700);
+  color: var(--text-200);
+  font-weight: 600;
+  font-size: 16px;
+  height: 50px;
+  min-width: 200px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid var(--primary-600);
+  &:hover {
+    background-color: var(--primary-300);
+    color: var(--text-900);
+  }
+}
+
+.cell-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: var(--text-200);
+  border-radius: 50px;
+  transition: 0.6s;
+  &:hover {
+    background-color: var(--primary-900);
+  }
+}
+
+button {
+  font-weight: 600;
+}
+
+.theme-btn {
+  border: none;
+  outline: none;
+  width: 30px;
+  background: none;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  color: var(--text-200);
+  &:hover {
+    transform: scale(1.2);
+  }
+}

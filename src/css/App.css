@@ -1,0 +1,10 @@
+@import "globals.css";
+@import "inputs.css";
+@import "forms.css";
+@import "btns.css";
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
